@@ -1,0 +1,308 @@
+html {
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    font-family: PS TT Commons Roman,Gotham SSm A,Gotham SSm B,Arial,sans-serif;
+    font-family: var(--psTypeFontFamily);
+    font-size: .875em;
+    font-weight: 400;
+    font-weight: var(--psTypeFontWeightRegular);
+    line-height: 1.71429;
+    font-feature-settings: "tnum" on,"lnum" on;
+}
+body{
+    display: block;
+    font-family: PS TT Commons Roman,Gotham SSm A,Gotham SSm B,Arial,sans-serif;
+    margin: 0;
+    background-color: #0d0f12;
+    color: hsla(0,0%,100%,.95);
+}
+div {
+    display: block;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+}
+#left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+    #right{
+        position: relative;
+        flex: 1;
+        display: none;
+    }
+.spacer {
+    flex: 1;
+    min-height: 48px; 
+}
+.login {
+    display: flex; 
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 12px;
+    width: 100%;
+}
+ .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    margin-bottom: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.logo img{
+    width: 303px;
+    max-width: 80%;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+.signInForm {
+    width: 80%;
+}
+.signInForm label {
+    color: hsla(0,0%,100%,.95);
+    font-size: 16px;
+}
+.signInForm input {
+    margin-bottom: 24px;
+}
+
+.psds-text-input__field {
+    align-items: center;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 2px;
+    color: rgba(0,0,0,.9);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    font-weight: 400;
+    height: 40px;
+    min-width: 192px;
+    padding: 5px 13px;
+    position: relative;
+    width: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+}
+.psds-text-input__field--appearance-subtle {
+    color: hsla(0,0%,100%,.95);
+    background: #0d0f12;
+    border: 1px solid hsla(0,0%,100%,.3);
+}
+.psds-text-input__label {
+    color: hsla(0,0%,100%,.95);
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.signInForm input {
+    margin-bottom: 24px;
+}
+.psds-button {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    justify-content: center;
+    align-items: stretch;
+    border: 0;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: background .2s,-webkit-transform .1s,transform .1s;
+    vertical-align: middle;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -webkit-transition: background .2s,-webkit-transform .1s,transform .1s;
+    -moz-transition: background .2s,transform .1s;
+}
+.signInForm .psds-button {
+    width: 100%;
+    margin-bottom: 48px;
+    align-items: center;
+}
+.psds-link--appearance-subtle {
+    color: currentColor;
+    text-decoration: underline;
+}
+.psds-button--appearance-primary.psds-theme--dark {
+    color: hsla(0,0%,100%,.95);
+    background: #0074ab;  
+}
+.psds-button, .text-with-icon {
+    align-items: center;
+}
+.psds-button--appearance-secondary.psds-theme--dark {
+    color: hsla(0,0%,100%,.95);
+    background: rgba(138,153,168,.25);
+}
+.psds-button--size-medium {
+    font-size: 16px;
+    letter-spacing: .01em;
+    padding: 10px 16px;
+    height: 40px;
+}
+a {
+    background-color: transparent;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.links {
+    width: 80%;
+    text-align: center;
+}
+.links a {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.psds-link--appearance-default.psds-theme--dark {
+    color: #2ea0d6;
+    text-decoration: none;
+}
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+.or {
+    margin-bottom: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.bar {
+    flex: auto;
+    border: none;
+    height: 1px;
+    background-color: hsla(0,0%,100%,.15);
+}
+#create-account-link {
+    margin-bottom: 24px;
+    width: 80%;
+    min-height: 32px;
+}
+#footer {
+    color: hsla(0,0%,100%,.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    flex: 1;
+    max-width: 80%;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    #left {
+        flex: 4;
+        display: block;
+    }
+    #right {
+         flex: 6;
+         display: block;
+        }
+    #create-account-link, .links, .or, .signInForm {
+            width: 80%;
+    }
+    div {
+        display: block;
+    }
+   .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        background-image: url("");
+        background-position: 50%;
+        background-size: cover;
+        }
+    .banner {
+        background: url("gads-2021/pluralsight-login-clone/bg-gtm-2020.png");
+        background-color: black;
+        background-position: right center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        justify-content: flex-start;
+        }
+    .marketing-banner {
+        width: 100%;
+        z-index: 0;
+    }
+    .banner .marketing-banner-text {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .banner .marketing-banner-text-wrapper {
+        padding: 5%;
+        margin-left: 50px;
+        text-align: left;
+    }
+    .marketing-banner-text {
+        width: 100%;
+        color: hsla(0,0%,100%,.95);
+        font-size: 48px;
+        margin-bottom: 24px;
+    }
+    img {
+        max-width: 100%;
+        vertical-align: middle;
+        border-style: none;
+    }
+    .banner .marketing-banner-title > img {
+        position: absolute;
+        right: 40px;
+        bottom: 40px;
+        max-width: 150px;
+    }
+   
+}
